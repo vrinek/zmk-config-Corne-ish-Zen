@@ -33,7 +33,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            label = "QWERTY";
+            label = "ALPHAS";
             bindings = <
    &none &kp V       &kp G      &kp H       &kp F       &kp K   &kp MINUS &kp U       &kp O       &kp Y      &kp W       &none
    &none &mt LMETA R &mt LALT S &mt LCTRL N &mt LSHFT T &kp P   &kp J     &mt RSHFT A &mt RCTRL E &mt RALT I &mt RMETA C &none
@@ -41,7 +41,7 @@
                                     &kp TAB &kp COMMA &kp DOT   &kp BSPC &kp SPACE &kp RET
             >;
         };
-        lower_layer {
+        number_layer {
             label = "NUMBER";
             bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
@@ -51,7 +51,7 @@
             >;
         };
 
-        raise_layer {
+        symbol_layer {
             label = "SYMBOL";
             bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
