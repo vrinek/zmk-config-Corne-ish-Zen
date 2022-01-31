@@ -64,10 +64,10 @@
         navigation_layer {
             label = " NAVI ";
             bindings = <
-   &none &none &none &none &none &none   &none &none &none &none &none &none
-   &none &none &none &none &none &none   &none &none &none &none &none &none
-   &none &none &none &none &none &none   &none &none &none &none &none &none
-                   &none  &none  &none   &none  &none  &none
+   &none &none     &none    &none     &none     &none   &none    &none     &none     &none     &none    &none
+   &none &kp LMETA &kp LALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp CAPS &none
+   &none &none     &none    &none     &none     &none   &kp HOME &kp PG_DN &kp PG_UP &kp END   &none    &none
+                                 &none  &trans  &none   &none  &none  &none
             >;
         };
     };
