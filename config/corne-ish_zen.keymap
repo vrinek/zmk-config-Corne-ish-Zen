@@ -60,5 +60,15 @@
                            &kp LPAR  &kp RPAR  &kp UNDER   &none  &trans  &none
             >;
         };
+
+        navigation_layer {
+            label = " NAVI ";
+            bindings = <
+   &none &none &none &none &none &none   &none &none &none &none &none &none
+   &none &none &none &none &none &none   &none &none &none &none &none &none
+   &none &none &none &none &none &none   &none &none &none &none &none &none
+                   &none  &none  &none   &none  &none  &none
+            >;
+        };
     };
 };
