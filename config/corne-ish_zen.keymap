@@ -80,12 +80,13 @@
                                 &kp TAB  &lt 3 COMMA  &kp DOT   &lt 2 BSPC  &lt 1 SPACE  &kp RET
             >;
         };
+
         number_layer {
             label = "NUMBER";
             bindings = <
-   &none &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT    &none &none     &none     &none    &none     &none
-   &none &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL   &none &kp RSHFT &kp RCTRL &kp RALT &kp RMETA &none
-   &none &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH    &none &none     &none     &none    &none     &none
+   &none &kp LBKT  &kp N7 &kp N8 &kp N9 &kp RBKT    &none  &none     &none     &none    &none     &none
+   &none &kp SEMI  &kp N4 &kp N5 &kp N6 &kp EQUAL   &none  &kp RSHFT &kp RCTRL &kp RALT &kp RMETA &none
+   &none &kp GRAVE &kp N1 &kp N2 &kp N3 &kp BSLH    &tog 4 &none     &none     &none    &none     &none
                        &kp DOT  &kp N0  &kp MINUS   &none  &trans  &none
             >;
         };
@@ -107,6 +108,16 @@
    &none &kp LMETA &kp LALT &kp LCTRL &kp LSHFT &none   &kp LEFT &kp DOWN   &kp UP     &kp RIGHT &kp CAPS   &none
    &none &none     &none    &none     &none     &none   &kp HOME &kp PG_DN  &kp PG_UP  &kp END   &none      &none
                                  &none  &trans  &none   &none  &none  &none
+            >;
+        };
+
+        gaming_layer {
+            label = "GAMING";
+            bindings = <
+   &none &kp TAB  &kp Q &kp W &kp E &kp R   &none  &none &none &none &none &reset
+   &none &kp ESC  &kp A &kp S &kp D &kp F   &none  &none &none &none &none &none
+   &none &kp LSFT &kp Z &kp X &kp C &kp V   &tog 4 &none &none &none &none &none
+           &kp LCTRL  &kp LALT  &kp SPACE   &none  &none  &none
             >;
         };
     };
