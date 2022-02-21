@@ -46,6 +46,25 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             masked_mods = <(MOD_LSFT)>;
         };
+
+        hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+        bhm: balanced_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;    // <---[[moderate duration]]
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
 
@@ -55,9 +74,9 @@
         default_layer {
             label = "ALPHAS";
             bindings = <
-   &none &kp V       &kp G      &kp H       &kp F       &kp K   &kp MINUS &kp U       &kp O       &kp Y      &kp W       &reset
-   &none &mt LMETA R &mt LALT S &mt LCTRL N &mt LSHFT T &kp P   &kp J     &mt RSHFT A &mt RCTRL E &mt RALT I &mt RMETA C &none
-   &none &kp X       &kp M      &kp L       &kp D       &kp B   &kp SLASH &mmlt       &mmgt       &kp DQT    &kp SQT     &none
+   &none &kp V       &kp G      &kp H       &kp F       &kp K   &kp MINUS &kp U        &kp O        &kp Y       &kp W        &reset
+   &none &hm LMETA R &hm LALT S &hm LCTRL N &hm LSHFT T &kp P   &kp J     &bhm RSHFT A &bhm RCTRL E &bhm RALT I &bhm RMETA C &none
+   &none &kp X       &kp M      &kp L       &kp D       &kp B   &kp SLASH &mmlt        &mmgt        &kp DQT     &kp SQT      &none
                                 &kp TAB  &lt 3 COMMA  &kp DOT   &lt 2 BSPC  &lt 1 SPACE  &kp RET
             >;
         };
