@@ -82,7 +82,7 @@
    &none &kp V       &kp G      &kp H       &kp F       &kp K   &kp MINUS &kp U        &kp O        &kp Y       &kp W        &reset
    &none &hm LMETA R &hm LALT S &hm LCTRL N &hm LSHFT T &kp P   &kp J     &bhm RSHFT A &bhm RCTRL E &bhm RALT I &bhm RMETA C &none
    &none &kp X       &kp M      &kp L       &kp D       &kp B   &kp SLASH &mmlt        &mmgt        &kp DQT     &kp SQT      &none
-                                &kp TAB  &lt 3 COMMA  &kp DOT   &lt 2 BSPC  &lt 1 SPACE  &kp RET
+                                &kp TAB  &lt 3 COMMA  &kp DOT   &lt 2 BSPC  &lt 1 SPACE  &lt 5 RET
             >;
         };
 
@@ -123,6 +123,16 @@
    &none &kp ESC  &kp A &kp S &kp D &kp F   &none  &none &none &none &none &none
    &none &kp LSFT &kp Z &kp X &kp C &kp V   &tog 4 &none &none &none &none &none
            &kp LCTRL  &kp LALT  &kp SPACE   &none  &none  &none
+            >;
+        };
+
+        function_layer {
+            label = " FUNC ";
+            bindings = <
+   &none &none &kp F7 &kp F8 &kp F9 &none   &none  &none     &none     &none    &none     &none
+   &none &none &kp F4 &kp F5 &kp F6 &none   &none  &kp RSHFT &kp RCTRL &kp RALT &kp RMETA &none
+   &none &none &kp F1 &kp F2 &kp F3 &none   &tog 4 &none     &none     &none    &none     &none
+                      &none  &none  &none   &none  &trans  &none
             >;
         };
     };
