@@ -27,6 +27,11 @@
             key-positions = <4 5>;
             bindings = <&kp Q>;
         };
+        combo_del {
+            timeout-ms = <100>;
+            key-positions = <33 34>;
+            bindings = <&kp DEL>;
+        };
     };
 
     behaviors {
